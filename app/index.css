@@ -1,3 +1,56 @@
-h1{
-    background-color: khaki;
+.card-area{
+
+    width: 70px;
+    height: 110px;
+    background-color: greenyellow;
+    
+    border: 3px solid black;
 }
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    backface-visibility: hidden;
+
+    transition: .7s;
+}
+
+
+.card > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-front{
+    background-color: slateblue;
+}
+
+.card-back{
+    background-color: aquamarine;
+    transform: rotateY(180deg);
+}
+
+.flip > .card{
+    transform: rotateY(180deg);
+}
+
+
+main{
+    background-color: rgba(0, 0, 0, 0.349);
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 120px;
+    place-items: center center;
+}
+
+
+
+
+
+
+
+
+
